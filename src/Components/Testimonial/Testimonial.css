@@ -1,0 +1,116 @@
+.Testimonial {
+position: relative;
+}
+.parlleximg{
+    position:absolute;
+    left:30%;
+    width:550px;
+    opacity: 0.4;
+}
+.Testimonial .navigation{
+    padding-top:80px ;
+    float: right;
+}
+.Testimonial .navigation .arrows li{
+    border:1px solid #fff;  
+}
+
+.Testimonial .navigation .arrows li img{
+    color:#fff;
+}
+
+.Testimonial .Review
+{
+    display: flex;
+    list-style: none;
+    padding:30px 0;
+}
+
+.Testimonial .Review li{
+    padding:30px;
+    border-right:1px solid rgba(255, 255, 255, 0.3)
+}
+.Testimonial .Review li img{
+    width:100px!important;
+    height:100px!important;
+    border-radius:100%;
+    object-fit: cover;
+}
+.ClientName{
+    padding:10px 0px;
+}
+
+.Testimonial .Review .ClientReview{
+    padding-top: 20px;
+}
+
+.Testimonial .Review .opaquetext h1{
+    font-size:100px;
+    font-weight:bold;
+    opacity:0.2;
+}
+
+.Testimonial .title p{
+    color:#fff;
+}
+
+.Testimonial .Navbtn{
+    float:right;
+    padding-top:20px;
+}
+
+.Testimonial .Navbtn button{
+    background-color: transparent;
+    border:1px solid #fff;
+    color:#fff;
+    transition: 1s;
+    padding:10px 20px;
+}
+
+
+.Testimonial .Navbtn button a {
+    color:#fff;
+    text-decoration: none;
+}
+
+
+/* /responsive/ */
+
+@media only screen and (max-width: 480px){
+    .title{
+        padding:20px;
+    }
+    
+    .parlleximg{
+        position:absolute;
+        left:0%;
+        width:350px;
+        opacity: 0.4;
+    }
+    .Testimonial .navigation{
+        padding-top:20px ;
+        float: right;
+    }
+    .Testimonial .navigation .arrows li{
+        border:1px solid #fff;  
+    }
+    
+    .Testimonial .navigation .arrows li img{
+        color:#fff;
+    }
+    
+    .Testimonial .Review
+    {
+        display: block;
+    }
+
+    .opaquetext{
+        display:none;
+    }
+
+    .Testimonial .Navbtn{
+        float:left;
+        padding-left:15px;
+    }
+
+}

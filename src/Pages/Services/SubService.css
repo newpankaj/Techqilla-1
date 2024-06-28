@@ -1,0 +1,191 @@
+/* Popup */
+
+.popup{
+    position: relative;
+    padding:150px 0 0 0;
+    background: #fff;
+}
+
+.popup-close-btn{
+    position: sticky;
+    top: -5%;
+    left:100%;
+    scale:0.67;
+    text-align: right;
+    z-index: 9;
+    width:100vw;
+}
+
+.popup::-webkit-scrollbar {
+  width: 10px;
+  display: none;
+}
+
+.popup::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: transparent;
+}
+
+.popup::-webkit-scrollbar-thumb {
+  background: grey; 
+  border-radius:0px;
+}
+
+.popup .head{
+    padding:0 0 50px 0;
+}
+
+.head .col-4 img{
+    width:480px;
+    height:350px;
+}
+.subtitle{
+    width:90%;
+}
+
+.popup .sub-services-list{
+    background:#0033B4;
+    padding:100px 50px;
+    color:#fff!important;
+}
+
+.popup .sub-services-list p{
+    color:#fff; 
+    opacity: 0.5;
+}
+
+.popup .sub-services-list .col-6{
+    padding:0 30px;
+}
+
+.sub-service{
+    padding:0 0 20px 0; 
+}
+
+.sub-service img{
+    width:45px;
+    height:80px;
+    object-fit:cover;
+}
+
+.sub-service h2{
+    padding:0 0 0px 0;
+}
+
+.sub-service:hover h2{
+    color:#FFD600
+}
+
+.portfolio-element{
+    width:50%;
+    padding:0;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+}
+
+.portfolio-element .element{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    overflow:hidden;
+    text-align: center;
+    position: relative;
+}
+
+.portfolio-element .element img{
+    height:100%;
+    width:100%;
+
+}
+
+.hyperlink{
+    font-size: 18px;
+    font-family:'roboto';
+    position: absolute;
+    top:45%;
+    left:25%;
+}
+
+.hyperlink svg{
+    padding-left:10px;
+    cursor:pointer
+}
+.linkstyle{
+    padding-top:30Px;
+}
+
+
+
+.linkstyle a{
+    color:#000;
+    text-decoration:none;
+}
+
+
+/* horizontal Scroll
+
+.portfolio-preview{
+    padding: 50px 0;
+    width:100vw;
+}
+
+.sticky-wrapper{
+    position: sticky;
+    top: 100px;
+    width: 100%;
+    overflow:hidden;
+    padding:50px 0;
+}
+
+.sticky-wrapper::after{
+    content: 'Work';
+    font-family:'syne';
+    font-size:300px;
+    font-weight:bold;
+    position: absolute;
+    top:0%;
+    left:10%;
+    color: #FFD600;
+    z-index:-1;
+}
+
+
+
+
+.element-wrapper .element:nth-child(odd){
+    top:90px;
+}
+
+.element-wrapper .element:nth-child(even){
+    top:-90px;
+} */
+
+.element-wrapper{
+    position: relative;  
+}
+  
+.element-wrapper .element {
+    width:50%; 
+    display:inline-grid;
+    align-items:center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+@media only screen and (max-width: 480px){
+    .popup .head{
+        padding:0px 15px 80px 15px;
+    }
+
+    .popup .sub-services-list{
+        padding:80px 15px;
+    }
+
+    .portfolio-element{
+        width:100%;
+    }
+}

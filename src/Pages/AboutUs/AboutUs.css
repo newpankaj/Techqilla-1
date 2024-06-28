@@ -1,0 +1,487 @@
+
+
+/**********************************************/
+/************* About us section ***************/
+/**********************************************/
+.about-us{
+    padding:100px 0;
+    background:#fff;
+} 
+
+.about-us .heading-title{
+    width:500px;
+    padding-top:50px;
+    padding-left:50px;
+}
+
+.about-us .heading-title h1{
+    font-size: 75px;
+    line-height: 86px;
+    font-weight: 700;
+    color:#000;
+}
+/* //hover effect */
+
+
+.about-us .heading-title h1 .textblu{
+    color:#1E44D3;
+}
+
+.about-us .para{
+    width:650px;
+    float:right;
+    margin-top:-100px;
+}
+
+.about-us .para p{
+    font-size:30px;
+    color:#000;
+}
+
+.about-us .para p span{
+    margin-left:140px;
+}
+
+/**********************************************/
+/************ Team gallery section ************/
+/**********************************************/
+
+.gallery-section{
+    padding-bottom:100px;
+}
+
+.gallery-section .slider{
+    display:flex;
+    padding:50px 0;
+    position: relative;
+}
+
+.gallery-section .slider::after,
+.gallery-section .slider::before{
+    content:'';
+    width:150px;
+    height:230px;
+    z-index:-1;
+    background: #1E44D3;
+}
+
+.gallery-section .slider::before{
+    position: absolute;
+    top:0%;
+}
+
+
+.gallery-section .slider::after{
+    position: absolute;
+    bottom:0%;
+    left:75%;
+}
+
+.gallery-section .slider div{
+    position: relative;
+    padding-right:35px;
+    transition: 0.1s ease;
+    overflow: hidden;
+}
+
+.gallery-section .slider div img:hover{
+    transform: scale(1.05);
+}
+
+.gallery-section .slider div:nth-child(2),
+.gallery-section .slider div:nth-child(4){
+    top:-40px;
+}
+
+.gallery-section .slider div:nth-child(5){
+    padding:0
+}
+
+/**********************************************/
+/*************** Values section ***************/
+/**********************************************/
+
+.values-section{
+    padding:100px 40px 150px 100px;
+    color:#fff;
+}
+
+.values-section .list-items
+{
+    padding:30px 0;
+    color:#fff;
+}
+
+.values-section .list-items:hover h4{
+    color:yellow;
+    transition: all ;
+}
+
+.values-section .list-items h4{
+    font-size: 32px;
+}
+
+.values-section .bg-text h1{
+    position: absolute;
+    color:#fff;
+    font-weight: 700;
+    font-size: 172px;
+    opacity: 0.04;
+}
+
+.values-section p{
+    color:#fff;
+    padding-top:20px;
+}
+/**********************************************/
+/**************** Believe section *************/
+/**********************************************/
+
+.believe-section{
+    position: relative;
+}
+
+.believe-section .para{
+    width:550px;
+    padding:20px 0; 
+}
+
+.believe-section .para p{
+    color:#fff;
+    text-align: justify;
+}
+
+.img-inner{
+    padding:0 80px;
+    height:500px;
+    position:relative;
+    overflow:hidden;
+}
+
+.img-inner img{ 
+    width:600px;
+    position: absolute;
+    bottom:0;
+}
+
+.hoverOnZoom{
+    overflow: hidden;
+}
+
+.hoverOnZoom img{
+    scale:1;
+    transition: 0.7s ease!important;
+}
+.hoverOnZoom:hover img{
+    scale:1.1;
+}
+/**********************************************/
+/**************** USP section *************/
+/**********************************************/
+.usp-section{
+    padding:100px 50px 0px ;
+}
+.features{
+    position: relative;
+}
+
+.usp-section .feature-items{
+   padding:20px 30px; 
+   cursor:pointer;
+}
+
+.usp-section .feature-items h4{
+    font-size:32px;
+    font-weight:bold;
+    color:#000;
+}
+
+.usp-section .feature-items p{
+    font-size: 16px;
+    color:#000;
+}
+
+.usp-section .feature-items img{
+    position: absolute;
+    width:450px;
+    height:450px;
+    top:10%;
+    right:5%;
+    transform: translate(0%,25%);
+    opacity: 0;
+    transition: 1s; 
+    border-radius: 100%;
+}
+
+.usp-section .feature-items:nth-child(1) img{
+    opacity: 1;
+}
+
+.usp-section .feature-items:hover img{
+    opacity: 1;
+    transition: 1s;
+}
+
+.work-section {
+    background: #1E44D3;
+}
+.work-section .title{
+    color:#fff;
+}
+
+.work-section p{
+    text-align: justify;
+}
+
+.bglightblue h2 span{
+    color:#FFD600
+} 
+
+#what-we-do-para{
+    color:#000;
+}
+.start-project-btn a{
+    color:#000!important;
+    text-decoration: none;
+}
+ 
+/* //What We Do */
+
+
+.wrapper-container{
+    height:2800px;
+}
+
+.wrapper {
+    padding-top:200px; 
+    width: 100%;
+    height:100%;
+    text-align: center;
+    position: relative;
+}
+
+.what-we-do{
+    position: relative;
+}
+.what-we-do-content{
+    position: absolute;
+}
+.what-we-do-content h4{
+    margin-bottom:-100px;
+    margin-left:-150px;
+    font-size: 250px;
+    font-family:'poppins';
+    color:#fff;
+    opacity:0.1;
+}
+
+.content-1{
+    top:-5%;
+    right:0;
+}
+
+.content-2{
+    top:15%;
+    left:15%;
+}
+.content-3{
+    top:35%;
+    right:20%;
+}
+.content-4{
+    top:55%;
+    left:15%;
+}
+.content-5{
+    bottom:10%;
+    right:20%;
+}
+
+.what-we-do-content p{
+    color:#fff;
+    font-size:28px;
+}
+
+.imgstyle{
+    position: absolute;
+}
+
+#svg1{
+    right: -12%;
+    position: relative;
+}
+#task1{
+    width: 303px;
+    top: 2%;
+    left: 10%;
+}
+#svg2{
+    position: relative;
+    left: 7%;
+    margin-top: -18px;
+}
+#task2{
+    width: 459px;
+    top: 21%;
+    right: 15%;
+}
+
+#svg3{    
+    position: relative;
+    top: 68vh;
+    left: -6.5%;
+
+}
+#task3{
+    width: 364px;
+    left: 10%;
+    top: 42.65%;
+}
+
+#svg4{
+    position: relative;
+    top: 78.7vh;
+    left: -12%;
+}
+
+#task4{ 
+    width: 418px;
+    right: 11.5%;
+    top: 63%;
+}
+#task5{
+    width: 160px;
+    left: 25%;
+    bottom: 6%;
+}
+
+@media (min-width: 1100px) and (max-width: 1300px){
+    .about-section{
+        padding:100px 25px!important;
+    }
+}
+/* /Mobile Responsive/ */
+
+@media only screen and (max-width: 480px){
+    .about-us .heading-title{
+        width:300px;
+        padding:0;
+    }
+    .about-us .heading-title h1{
+        font-size: 45px;
+        line-height:55px;
+    }
+    .values-section .bg-text h1{
+        font-size:5rem
+    }
+    .values-section{
+        padding: 100px 20px;
+    }
+    .about-us .para{
+        margin:0;
+        width:100%;
+    }
+    .about-us .para p{
+        text-align: justify;
+        font-size:15px;
+    }
+    .gallery-section .slider::after, .gallery-section .slider::before{
+        width:80px;
+        height:140px;
+    }
+
+    .gallery-section .slider div:nth-child(3){
+        padding:0;
+    }
+    .gallery-section .slider div:nth-child(4), .gallery-section .slider div:nth-child(5){
+        display: none;
+    }
+    .sub-title h3{
+        font-size:28px;
+    }
+
+    .title{
+        padding:10px 0
+    }
+
+    .believe-section .para{
+        width:340px;
+    }
+
+    .usp-section .feature-items img{
+        display: none!important;
+    }
+
+    .usp-section{
+        padding: 50px 20px;
+    }
+    .usp-section .feature-items{
+        padding:10px 0 0 0;
+    }
+    .usp-section .feature-items h4{
+        font-size: 20px;
+    }
+
+    .work-section{
+        padding:50px 15px;
+    }
+     
+    .img-inner img{
+        width:100%;
+    }
+
+    .believe-section{
+        padding:50px 15px;
+    }
+
+    #arrowsvg{
+        width:20%;
+        height:100%
+    }
+
+    .what-we-do-content h4{
+        margin-bottom:-40px;
+        margin-left:-50px;
+        font-size: 80px;
+        font-family:'poppins';
+        color:#fff;
+        opacity:0.1;
+    }
+    .what-we-do-content p{
+        font-size:16px;
+    }
+
+    .what-we-do svg{
+        width:100%;
+        height:100%;
+    }
+    .content-1{
+        top:-3%;
+        right:0;
+    }
+    
+    .content-2{
+        top:15%;
+        left:15%;
+    }
+    .content-3{
+        top:35%;
+        right:20%;
+    }
+    .content-4{
+        top:55%;
+        left:15%;
+    }
+    .content-5{
+        bottom:10%;
+        right:10%;
+    }
+
+    .mobile-wrapper svg{
+        width:100%;
+        height:100%;
+    }
+    
+}
+
+

@@ -1,0 +1,366 @@
+.Hero-section{
+    padding:80px 80px;
+    background:linear-gradient(180deg, #BFD4FF -26%, #fff 60%)
+}
+
+.Hero-section .bannerText{ 
+    height:240px;
+    overflow:hidden;
+}
+.Hero-section h1{
+    font-size:50px;
+    color:#000;
+    line-height:80px;
+}
+
+
+
+.blueclr{
+    font-family: 'Syne', sans-serif!important;
+    font-size: 75px!important;
+    font-weight:700;
+    color:#0049DC; 
+}
+
+.Hero-section .content{
+    padding:50px 0;
+    display: flex;
+    margin:auto;
+}
+.Hero-section .content img{
+    width:150px;
+}
+
+.Hero-section .content svg{
+    overflow: visible;
+}
+.Hero-section .content svg path{
+    width: 100%;
+    transform: translate(0%, 0);
+    transition: 0.6s ease;
+}
+.Hero-section .content a{
+    position: relative;
+}
+.content svg:hover path{
+    fill:#0049DC;
+    stroke:#0049DC; 
+    stroke-dasharray: 320;
+    stroke-dashoffset: 0;
+    animation: dash 1s linear;  
+}   
+
+@keyframes dash {
+from {
+    stroke-dashoffset: 320;
+    fill:none;
+}
+to {
+    stroke-dashoffset: 0;
+}
+}
+
+.Hero-section .content p{
+    width:500px;
+    padding-left:50px;
+    padding-top:20px;
+    color:#888;
+    position: relative;
+}
+
+.nav{
+    list-style:none;
+    display:flex;
+    z-index:9;
+    position: absolute;
+    bottom:1%;
+    right:5%;
+}
+
+.nav li{
+    margin-left:0px;
+    padding:10px 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+/****Banner 1****/
+
+.float{
+    text-align:center
+}
+
+.logomask{
+    width:440px!important; 
+    float:right;
+    height:540px;
+}
+
+/* Banner 2 */
+
+.Hero-section .bannerimg {
+    float:right;
+    width:400px;
+}
+
+.Hero-section .banner{
+    position: relative;
+    height:400px;
+    width:400px;
+}
+
+.Hero-section .banner img:first-child{
+    position: absolute;
+    top:-5%;
+    left:45%;
+    width:400px;
+    height:450px;
+    z-index:2;
+}
+
+.Hero-section .banner img:nth-child(2){
+    position: absolute;
+    top: 0%;
+    left:60%;
+    width:400px;
+    height:400px;
+}
+
+/* /banner 3/ */
+.banner-3{
+    position: relative;
+}
+
+#slider3{
+    width:350px;
+    height:450px
+}
+
+.banner-head{
+    transform: rotate(90deg);
+    position: absolute;
+    top:20%;
+    left:40%;
+}
+
+.banner-head h1{
+    font-family:'roboto'!important;
+    font-size:125px;
+    font-weight:bold;
+    position: absolute;
+    -webkit-text-stroke:2px #fff;
+    color:transparent;
+}
+
+.banner-img{
+    width:400px;
+    height: 450px;
+    float:right;
+    position: relative;
+}
+
+.banner-img::after{
+    content:'';
+    width:500px;
+    height:180px;
+    position:absolute;
+    right:15%;
+    bottom:5%;
+    z-index:-1;
+    background: #FFD600;
+}
+
+.banner-img img{
+    width:80%
+}
+
+
+
+/* /button dots/ */
+
+.owl-theme .owl-dots .owl-dot span{
+    border:2px solid #0049DC!important;
+    background: transparent !important;
+    opacity: 0.5;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background:#0049DC!important;
+    scale: 1.5;
+    opacity: 1;
+}
+.hide-on-desktop{
+    display: none!important;
+}
+/* /Responsive/ */
+
+/* 1440px */
+
+@media (min-width: 1100px) and (max-width: 1440px){
+
+    /* //Banner 1// */
+    .float .logomask{
+        width:400px;
+    }
+
+    /* //BANNER 2// */
+      
+    .Hero-section .banner img:first-child{
+        width:350px;
+        height:400px;
+    }
+    .Hero-section .banner img:nth-child(2){
+        position: absolute;
+        top: 0%;
+        left:60%;
+        width:350px;
+        height:350px;
+    }
+
+    /* //BANNER 2// */
+    .banner-img{
+        width:350px;
+        height: 400px;
+    }
+    .banner-head h1{
+        font-size:100px;
+    }
+
+    /* //Nav BAR// */
+    .nav{
+        bottom:0%;
+    }
+
+}
+
+
+/* //Mobile// */
+@media only screen and (max-width: 480px){
+
+    .Hero-section span:first-child{
+        font-size:38px!important;
+    }
+   
+    .Hero-section{
+        padding:100px 10px 30px 10px;
+    }
+    .Hero-section .bannerText{ 
+        overflow:hidden;
+       
+    }
+
+    .Hero-section .bannerText div{
+        line-height:30px;  
+    }
+
+    .Hero-section h1{
+        font-size:20px;
+        color:#000;
+        line-height:40px;
+    }
+    .Hero-section .bannerText{
+        height:30vh;
+        width:100%;
+    }
+    .Hero-section .clrtext{
+        font-family: 'Syne', sans-serif!important;
+        font-size: 35px!important;
+        font-weight:700;
+        color:#0049DC;
+        overflow: hidden;
+    }
+    .Hero-section .content{
+        padding:15px;
+        cursor: pointer!important;
+    }
+    .Hero-section .content p{
+        padding-left:0px;
+        padding-top:0px;
+        font-size:15px;
+    }
+
+    .float{
+        display: none;
+    }
+
+    .content svg{
+        width:100%;
+        display: none;
+    }
+
+    .nav{
+        position: relative;
+        left:0%
+    }
+    
+    .hide-on-mobile{
+        display: none!important;
+    }
+    .hide-on-desktop{
+        display: block!important;
+    }
+
+    .hide-on-desktop .logomask{
+        width:100%!important;
+        height:100%;
+    }
+
+    .hide-on-desktop .content svg{
+        display: block;
+    }
+
+    .hide-on-desktop span:first-child{
+        font-size:22px!important;
+    }
+
+    .hide-on-desktop .banner-img{
+        width:200px;height: 200px;
+        float: none;
+    }
+
+    .hide-on-desktop .banner{
+        width:150px;
+        height:150px;
+    }
+
+    .hide-on-desktop  #slider3{
+        width:150px;
+        height:200px;
+    }
+
+    .hide-on-desktop .banner-img::after{
+        width:140px;
+        height:50px;
+        bottom:-15%;
+        right:0%;
+    }
+    .hide-on-desktop .banner img:first-child{
+        width:150px;
+        height:150px;
+        left:0;
+        right:10%;
+    }
+    .hide-on-desktop .banner img:nth-child(2){
+        width:150px;
+        height:150px;
+        right:10%;
+        left:0;
+    }
+    .hide-on-desktop .bannerText{
+        display: flex;
+        align-items: center;
+    }
+
+    .hide-on-desktop .banner-head{
+        display: none;
+    }
+
+    .hide-on-desktop .content p{
+        margin:0;
+        font-size:14px;
+        padding-left:10px;
+    }
+}
+
+ 

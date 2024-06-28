@@ -1,0 +1,252 @@
+.portfolios{ 
+    padding:150px 40px 0 40px;
+    position: relative;
+}
+
+.portfolios .title h3{
+    font-size: 52px;
+    font-weight: 700;
+    color:#000;
+}
+.portfolios .title h3 span{
+    color:#1E44D3;
+}
+
+
+/*********Portfolio Categories Section ************/
+
+.portfolio-category ul{
+    list-style: none;
+    padding: 0;
+}
+
+.portfolio-category ul li{
+    color:#000;
+    padding-top:100px;
+    padding-bottom:60px;
+    font-size:32px;
+    font-family: syne;
+    font-weight: 700;
+    border:none;
+    border-bottom: 2px solid #333;
+}
+.portfolio-category ul li a{
+    color:#000;
+    text-decoration:none!important;
+}
+ 
+
+.portfolio-category ul li:last-child{
+    border:none;
+    border-bottom:none;
+}
+.portfolio-category ul li .arrow-anchor{
+    width:2vw;
+    float: right;
+    margin-right:30px;
+    display: none;
+    transition:0.7s;
+}
+
+
+.portfolio-category ul li .arrow-anchor:hover{
+    rotate: 45deg;
+    scale:1.1;
+}
+
+.portfolio-category ul li:hover .arrow-anchor{
+    display: block;
+}
+.portfolio-category ul li .portfolio-preview{
+    position: absolute;
+    right:0;
+    bottom:0;
+    width:50%;
+    height:780px;
+    display: none;
+}
+
+.portfolio-category ul li:first-child .portfolio-preview{
+    display: block;
+}
+
+.portfolio-category ul li:hover .portfolio-preview{
+    display: block;
+}
+ 
+ 
+.portfolio-wrapper::-webkit-scrollbar {
+    opacity: 0;
+}
+
+.portfolio-wrapper ul{
+    list-style:none;
+}
+
+.portfolio-wrapper ul li{
+    font-size:80px;
+    font-family: syne;
+    font-weight:bold;
+    line-height: 80px;
+    padding:25px;
+    opacity: 0.3;
+    transition: 1s;
+}
+
+.portfolio-wrapper li:first-child{
+    opacity: 1;
+}
+
+.portfolio-wrapper ul li:hover{
+    opacity: 1;
+}
+
+.portfolio-wrapper ul .active{
+    opacity: 1;
+}
+
+.portfolio-image-wrapper .portfolio-image {
+    height:620px;
+    overflow:scroll;
+    scroll-behavior: smooth;
+    touch-action: none;
+
+}
+
+.portfolio-image-wrapper .portfolio-image::-webkit-scrollbar{
+    opacity: 0;
+}
+
+.portfolio-image-wrapper img{
+    border-radius: 100%;
+    height:600px;
+    width:600px;
+    object-fit:cover;
+    padding:20px;
+}
+
+.portfolio-image-wrapper .portfolio-image{
+    display: none; 
+}
+
+.portfolio-image-wrapper .port-img-1{
+    display: block;
+}
+
+.btnstyle{
+    border:none;
+    background:transparent
+}
+
+.btnstyle a {
+    text-decoration: none;
+}
+
+.btnstyle svg{  
+    background: #1E44D3;
+    border: none;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+.btnstyle:hover svg{  
+    transform: rotate(45deg);
+}
+
+/* Portfolio */
+.portfolio-canvas{
+    height:2600px;
+    padding:50px 0 150px 0;
+    background-color:#1E44D3;
+    overflow: hidden;
+}
+
+.portfolios-container{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    text-align: center;
+}
+
+.portfolios-container .linesvg{
+    display: inline-block;
+    height:100%;
+}
+
+.portfolio-items h1{
+    color:#fff;
+    font-family: 'syne';
+    font-size:72px;
+}
+
+.port1 svg{
+    position: absolute;
+    top:-0.85%;
+    left:36.5%;
+}
+
+.port1 h1{
+    position: absolute;
+    top:5%;
+    left:15%;
+} 
+
+.port2 svg{
+    position: absolute;
+    top: 29.5%;
+    left: 65%;
+}
+.port2 h1{
+    position: absolute;
+    top:40%;
+    left:65%;
+}
+
+.port4 svg{
+    position: absolute;
+    bottom:2%;
+    left:46%;
+}
+.port4 h1{
+    position: absolute;
+    bottom:-4%;
+    left:45%;
+}
+
+
+/*********fixed-scroller***********/
+
+.fixed-scroller{
+    position: fixed!important;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:9999;
+}
+
+/* /Mobile Responsive/ */
+
+@media only screen and (max-width: 480px){
+    .opaque-text{
+        font-size:5rem
+    }
+    .portfolios{
+        padding:100px 15px 0 15px;
+    }
+
+    .portfolio-category ul li .portfolio-preview{
+        display: none!important;
+    }
+    .portfolio-category ul li:hover .arrow-anchor{
+        display: none;
+    }
+    .portfolio-category ul li{
+        padding-top:50px;
+    }
+}

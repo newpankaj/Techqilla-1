@@ -1,0 +1,144 @@
+/* Popup */
+
+.overlay{
+    background-color: #000;
+    position: fixed;
+    height:100vh;
+    width:100vw;
+    top:0;
+    opacity:0.7;
+    z-index:9999998;
+}
+
+.popup-container{
+    padding:50px;
+}
+
+.popup{
+    position: relative;
+    padding:50px 0px;
+    z-index:9999999;
+    background: #fff;
+    top:0;
+    /* left:5%; */
+    margin:50px 0;
+    border-radius:20px;
+    overflow: scroll;
+    height:100vh;
+    width:90vw; 
+}
+
+.popup-close-btn{
+    position: sticky;
+    top: -5%;
+    left:100%;
+    scale:0.67;
+    text-align: right;
+    z-index: 9;
+    width:100vw;
+}
+
+.popup-close-btn button{
+    background:transparent;
+    border:none;
+}
+
+.popup-close-btn button svg circle{
+    fill:#000;
+}
+.popup-close-btn button svg path{
+    fill:#fff;
+}
+
+.popup::-webkit-scrollbar {
+  width: 10px;
+  display: none;
+}
+
+.popup::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: transparent;
+}
+
+.popup::-webkit-scrollbar-thumb {
+  background: grey; 
+  border-radius:0px;
+}
+
+.popup .head{
+    padding:0 0 100px 0;
+}
+
+.subtitle{
+    width:600px;
+}
+
+.popup .sub-services-list{
+    background:#0033B4;
+    padding:100px 50px;
+    color:#fff!important;
+}
+
+.popup .sub-services-list p{
+    color:#fff; 
+    opacity: 0.5;
+}
+
+.sub-service{
+    padding:20px 0; 
+}
+
+.sub-service h2{
+    padding:20px 0;
+}
+
+/* horizontal Scroll */
+
+.portfolio-preview{
+    padding: 50px 0;
+    width:100vw;
+}
+
+.sticky-wrapper{
+    position: sticky;
+    top: 100px;
+    width: 100%;
+    overflow:hidden;
+    padding:50px 0;
+}
+
+.sticky-wrapper::after{
+    content: 'Work';
+    font-family:'syne';
+    font-size:300px;
+    font-weight:bold;
+    position: absolute;
+    top:0%;
+    left:10%;
+    color: #FFD600;
+    z-index:-1;
+}
+
+
+.element-wrapper{
+    position: relative;
+    display: flex;
+    height:100%;
+}
+  
+.element-wrapper .element {
+    margin: 0px 10px 0 10px;
+    flex-shrink: 0;
+    display:inline-grid;
+    align-items:center;
+    position: relative;
+    overflow: hidden;
+}
+
+.element-wrapper .element:nth-child(odd){
+    top:90px;
+}
+
+.element-wrapper .element:nth-child(even){
+    top:-90px;
+}

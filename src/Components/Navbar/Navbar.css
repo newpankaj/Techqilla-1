@@ -1,0 +1,539 @@
+/* //Header Section// */
+header{
+    position: relative;
+}
+
+.Navbar{
+    background:transparent;
+    padding:10px 20px;
+    width:100%;
+    position:absolute;
+    z-index:999;
+}
+
+.Navbar .logo img{
+    width:220px;
+    height:55px;
+}
+
+.Navbar .menu-container{
+    display:flex;
+    float:right;
+    align-items: center;
+}
+
+.Navbar .menu-container .menubtn{
+    border:1px solid #0049DC;
+    background:transparent;
+    border-radius: 25px;
+    color:#0049DC;
+    width:150px;
+    height:40px;
+    text-transform: capitalize;
+    margin-right:20px;
+    transition: 0.4s ;
+}
+
+.Navbar .menu-container .quickLink{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background:#0049DC;
+    position:relative;
+    transition: 0.5s;  
+    scale:1;
+    cursor: pointer;
+}
+
+.Navbar .menu-container .quickLink:hover {
+  scale:0.9
+}
+
+.Navbar .menu-container .quickLink svg{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    transition: 1s ease;
+    width:100%;
+    opacity: 1;
+}
+
+/* //Header Ends// */
+
+
+/* // Schedule Form// */
+.schedular{
+  position: fixed;
+  top: 12%;
+  z-index: 99999;
+  background: #fff;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  padding:40px 0;
+  box-shadow: 10px 6px 25px 35px #0000000f;
+}
+
+.col50{
+  width:50%;
+}
+.schedular::before{
+  content:'';
+  position:absolute;
+  right:200px;
+  top:-15px;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-top: 0;
+  border-bottom: 20px solid #fff;
+
+}
+.s-head{
+  text-align:center;
+}
+
+.s-head span{
+  font-family: 'syne',sans-serif;
+  font-size:24px;
+  font-weight:bold;
+}
+
+.s-form{
+  width:80%;
+  margin:50px auto;
+}
+.s-form label{
+  font-family: 'syne',sans-serif;
+  font-size:20px;
+  font-weight:600;
+  color:#000;
+  width:100%;
+}
+
+.s-form input{
+  border:1px solid #CCCCCC;
+  margin-top:10px;
+  margin-bottom:15px;
+  padding:10px;  
+  font-family: 'roboto';
+  font-weight:normal;
+  font-size:16px;
+  color:#000;
+  width:100%;
+}
+
+.s-form input::placeholder
+{
+  font-family: 'roboto';
+  font-weight:normal;
+  font-size:16px;
+  color:#000;
+}
+
+/* //calander styling */
+.react-calendar{
+  float:right;
+  padding:15px 10px;
+  width:85%!important;
+  border:none!important;
+  box-shadow: 0 6px 32px 0 #00000020;
+}
+
+.shadowBox{
+  float:right;
+  padding:25px 50px;
+  height:420px;
+  width:85%!important;
+  border:none!important;
+  box-shadow: 0 6px 32px 0 #00000020;
+  font-size: 20px;
+  color:#000;
+  font-family:'syne';
+  font-weight:700;
+  line-height:50px;
+}
+
+.shadowBox img{
+  width:1vw;
+}
+
+.tab .navigationbtn{
+  border:none;
+  background:transparent;
+  font-size:18px;
+  font-family:'syne';
+  font-weight:600;
+  color:#1E44D3;
+  padding-left:0;
+  padding-top:10px;
+  cursor: pointer;
+}
+
+.tab .submit{
+  margin-left:20px;
+  background:#0049DC;
+  color:#fff;
+  padding:10px 15px;
+}
+.react-calendar__tile:disabled{
+  background-color: transparent!important;
+}
+
+button.react-calendar__tile.react-calendar__tile--now.react-calendar__tile--active.react-calendar__tile--range.react-calendar__tile--rangeStart.react-calendar__tile--rangeEnd.react-calendar__tile--rangeBothEnds.react-calendar__month-view__days__day{
+  color:#b5b5b5!important;
+}
+.react-calendar__tile--active {
+  background: #0049DC; 
+}
+
+.react-calendar__month-view__weekdays__weekday{
+  padding:10px !important;
+  font-family:syne!important;
+  font-size:12px;
+  text-decoration: none;
+}
+
+.react-calendar__month-view__weekdays__weekday abbr{
+  text-decoration: none!important;
+  font-size: 13px!important;
+}
+
+abbr{
+  font-family: syne;
+  font-size: 16px!important;
+  font-weight:700!important;
+}
+
+.react-calendar__navigation__label .react-calendar__navigation__label__labelText{
+  font-family: syne;
+  font-size:21px;
+  font-weight: bold;
+}
+
+.react-calendar__tile{
+  padding:15px 20px!important
+}
+
+
+.time .col-6{
+  position: relative;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.time input[type="radio"]{
+  opacity: 0.01;
+  z-index: 100;
+  position: absolute;
+  width:100%;
+  height:100%;
+}
+
+.time input[type="radio"]:checked+label,
+.Checked+label {
+  background: #00102F;
+  color:#fff;
+}
+.time label {
+  padding: 15px 20px;
+  border: 1px solid #CCC;
+  cursor: pointer;
+  z-index: 90;
+  font-size:16px;
+  text-align:center;
+  font-family: roboto;
+  font-weight:400
+}
+
+.schedule-inner select{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c6c6c6;
+}
+
+
+.tab2{
+  display: none;
+}
+/* 
+.tab{
+  display: none;
+} */
+
+/* // Schedule Form Ends // */
+
+/* //Menu Section// */
+
+.menusection{
+  position: fixed;
+  top: 100%;
+  left: 100%;
+  transform: translate(100%,100%);
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  color: #fff;
+  background:transparent;
+  opacity: 0;
+}
+
+.menubgimg{
+  background:url("../../img/menu-2.jpg");
+  background-position:center;
+  height:100vh; 
+  background-size:cover; 
+  background-repeat: no-repeat;
+}
+
+.menubg{
+  position: relative;
+  background-color:#0049DC;
+}
+
+.closebtn{
+  position: relative;
+  top:20px;
+  right:20px;
+  z-index:9999;
+  float:right;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.closebtn svg{
+  scale:0.7;
+  transition: all 0.6s;
+}
+
+.closebtn:hover svg{
+  scale:0.6
+}
+
+.menu-items{
+  position: absolute;
+  top:10%;
+  left:10%;
+}
+#nav {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+nav a {
+  font-size: 50px;
+  font-weight: 500;
+  font-family: 'syne';
+  font-weight:bold;
+  height:100px;
+  text-decoration: none;
+  position: relative;
+  left:0;
+  transition: all 0.7s ease;   
+  padding:0 20px ;
+  color:#fff; 
+}
+nav a::after{
+  content: '';
+  position: absolute;
+  top:0%;
+  width:200px;
+  height:40px;
+  background-color: #0049DC;
+  opacity: 0;
+  transform: scale(1);
+  transition: all 0.7s ease;
+} 
+
+nav a:hover::after{
+  top:50%;
+  opacity: 1;
+}
+
+nav a:hover {
+  color: #FFD600;
+  left:20px;  
+}
+
+nav > a > span {
+  display: block;
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+  position: relative;
+  z-index: 2;
+}
+
+.social-icon{
+  position: absolute;
+  bottom:0%;
+  right:5%;
+}
+
+.social-icon ul{
+  display: flex;
+  list-style: none;
+  padding:10px 40px ;
+}
+
+.social-icon ul li{
+  padding-right:20px;
+  margin:0;
+}
+
+.social-icon li svg{
+  width:35px;
+  height:35px;
+  text-align: center;
+  padding:5px;
+  font-size:20px;
+  border-radius: 10px;
+  position: relative;
+  top:0;
+  transition:all 0.6s ease-in-out;
+  scale:1.1
+}
+
+.social-icon li svg:hover{  
+  transform: rotate(360deg) scale(1.5)
+}
+
+.social-icon svg path{
+  fill:#fff;
+}
+
+.social-icon svg:hover path{
+  fill:#FFD600;
+}
+
+.close{ 
+  transform: translate(0%, -100%)!important;
+  transition: 1s;
+}
+
+.close .menubgimg{
+  transform: translate(100%, 0%)!important;
+  transition: 1.5s;
+}
+
+/* //Menu Section Ends// */
+
+/* //Social Media Icons// */
+
+.iconbar{
+  position: fixed;
+  top:45%;
+  right:2%;
+  z-index:998;
+}
+
+.iconbar ul{
+  list-style:none;
+  /* background-color:#00102f; */
+  border-radius: 10px;
+  padding:0;
+  /* border: 1px solid #fff; */
+}
+
+.iconbar ul li{
+  padding:8px 12px;
+  border-radius: 50%;
+  box-shadow:5px 5px 15px #3030302b;
+  background:#0049DC;
+  margin-bottom: 10px;
+  width:45px;
+  height:45px;
+  scale:1;
+  transition: 0.3s ease;
+}
+
+.iconbar ul li:hover{
+  scale:1.2;
+  background:#0049DC;
+}
+ 
+
+.iconbar svg {
+  width:20px; 
+  scale:1.2;
+  cursor:pointer;
+}
+
+
+.iconbar svg path{
+  transition: 0.7s;
+}
+
+
+/* //Responsive// */
+@media  (min-width: 1200px) and (max-width: 1440px){
+  .iconbar{
+    position: fixed;
+    top:25%;
+    right:2%;
+    z-index:998;
+  }
+}
+
+/**Mobile css***/
+
+@media (min-width: 320px) and (max-width: 480px) {
+   
+  .Navbar{
+      padding:15px 10px;
+  }
+  
+  .Navbar .logo img{
+      width:100%;
+      height: 100%;
+  }
+
+  .Navbar ul li .quickLink{
+      display: none;
+  }
+
+  .Navbar .row{
+      padding:0!important
+  }
+
+  .Navbar .menu-container {
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    z-index: 9;
+  }
+  .Navbar .menu-container .menubtn{
+    display: none;
+  }
+
+
+
+  .menubgimg{
+    display:none
+  }
+
+  .menubg{
+    height:100vh;
+  }
+
+  .menu-items{
+    left:0;
+  }
+
+  .social-icon{
+    left:10%;
+    right:0;
+  }
+
+  .iconbar{
+    display: none;
+  }
+
+  nav a{
+    font-size:35px;
+    height:80px;
+  }
+
+}

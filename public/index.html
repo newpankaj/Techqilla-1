@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Techqilla"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+     <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>TechQilla </title>
+    
+  </head>
+
+  <body>
+    
+    <div id="root"></div>
+ 
+  </div>
+ 
+  </body>
+
+  <script>
+
+    document.addEventListener('mousemove',parallex);
+    
+    function parallex(e){
+      document.querySelectorAll(".object").forEach(function(move){
+        var moving_value= move.getAttribute('data-value');
+        var x = (e.clientX * moving_value /250);
+        var y = (e.clientY * moving_value /250);
+        move.style.transform = "translatex(" + x + "px) translateY(" + y + "px)";
+      })
+    }
+
+  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>  
+
+  <script>
+
+    // //Width of the Popup.
+    // const popupWidth= document.querySelector('.popup').clientWidth;
+    // //Horizontal Width of the elements container.
+    // const horLength = document.querySelector('.element-wrapper').scrollWidth;
+    // //Distance of the element section from the top.
+    // const distFromTop=  document.querySelector('.portfolio-preview').offsetTop;
+
+    // console.log(popupWidth,horLength,distFromTop)
+
+    // const scrollDistance = distFromTop + horLength - popupWidth;
+
+    // document.querySelector(".portfolio-preview").style.height = horLength+'px';
+
+    // document.querySelector('.popup').addEventListener('scroll', ()=>{
+
+    //     var scrollTop =document.querySelector('.popup').scrollHeight + document.querySelector('.popup').clientTop - document.querySelector('.popup').scrollTop  ;
+
+    //     if(scrollTop >= distFromTop && scrollTop <= scrollDistance){
+
+    //         //Move the Element Horizontaly
+    //         document.querySelector(".element-wrapper").style.transform = "translateX("+(scrollTop - scrollDistance)+"px)";
+
+    //     }
+    // });
+  </script>
+ 
+</body>
+
+</html>

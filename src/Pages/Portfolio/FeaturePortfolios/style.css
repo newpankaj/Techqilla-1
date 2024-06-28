@@ -1,0 +1,656 @@
+ .portfolio-featuring-wrapper{
+    padding: 200px 20px 100px 20px;
+
+}
+.portfolio-featuring-wrapper .title-text { 
+    width: 100%;
+    position: relative;
+
+}
+.portfolio-featuring-wrapper .title-text h2{
+    font-size:66px;
+    font-weight:bold;
+}
+
+.rotated-text{
+    position: absolute;
+    font-size: 35px;
+    font-weight: 400;
+    rotate: -90deg;
+    left: 0%;
+    top: 43%;
+}
+.rotated-text-right{
+    position: absolute;
+    font-size: 35px;
+    font-weight: 400;
+    rotate: -90deg;
+    right: 0%;
+    top: 43%;
+}
+
+.backnav{
+    position: relative;
+    right:0%;
+    top:5%;
+}
+
+/* .portfolio-featuring-wrapper .title-text svg{
+
+    position:absolute;
+    bottom:10%;
+    right:25%;
+} */
+.scroller-container{
+    position: relative;
+}
+
+.scroll{
+    position: absolute;
+    top: 12%;
+    left: 22%;
+    height: 460px;
+    width: 830px;
+    overflow-y: scroll;
+}
+
+#desktop-container{
+    padding:70px;
+}
+
+@keyframes rollover {
+
+    from{
+        rotate:0;
+        right:0%;
+    }
+
+    to{
+        rotate:360deg;
+        right:25%;
+    }
+    
+}
+
+.feature-category{
+    padding: 40px 0;
+}
+
+.feature-category marquee span{
+    padding-right:100px;
+    font-family:syne;
+    font-size:22px
+}
+
+.feature-category marquee span::before{
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #1E44D3; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-flex; /* Needed to add space between the bullet and the text */
+    width: 1.2em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em;
+}
+
+.feature-category ul{
+    display:inline-flex;
+    list-style: none;
+}
+
+.feature-category ul li{
+    padding-left:20px;
+    padding-right:100px;
+    font-family:syne;
+    font-size:22px
+}
+.feature-category ul li::before{
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #1E44D3; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1.2em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+/* .portfolio-preview{
+    padding-top:60px;
+    padding-bottom:60px;
+} */
+
+
+.portfolio-emt-intro{
+    padding: 0px 80px;
+}
+
+.portfolio-emt-intro h1{
+    font-size: 52px;
+    font-weight:700;
+    color:#000;
+    position: relative;
+}
+
+
+.portfolio-emt-intro .title-sub-head {
+    padding-top:20px;
+}
+
+.portfolio-emt-intro .title-sub-head h3{
+    font-size: 24px;
+    font-weight:700;
+}
+.portfolio-emt-intro p{
+    color:#000;
+    font-size:20px
+}
+
+.portfolio-emt-intro #portfolio-1{
+    width:250px;
+    height:250px;
+    position: absolute;
+    top:50%;
+    right:10%;
+}
+
+.portfolio-element-3{
+    width:33.3333%;
+    padding: 0;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+}
+.portfolio-element-3 .element{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+.portfolio-element-3 .element img{
+    width:100%;
+    height:100%;
+}
+
+.start-project-btn{
+    text-align:center;
+    padding:20px 0;
+}
+
+.start-project-btn .start-project-btn-inner{
+    font-size:18px;
+    font-family: syne;
+}
+
+.start-project-btn .start-project-btn-inner svg{
+    padding-left:5px;
+}
+
+.mid-title h2{
+    font-size:60px;
+    font-weight:bold;
+}
+
+.packaging-portfolio{
+    position: relative;
+}
+
+.packaging-portfolio .portfolio-emt-intro h1::after{
+    display: none;
+}
+
+.packaging-portfolio .col-6,.col-2,.col-4{
+    padding:0;
+}
+
+.packaging-portfolio .brochure-portfolio-image-mid,.brochure-portfolio-image-right{
+    position: relative;
+    height:100%;
+}
+.packaging-portfolio .brochure-portfolio-image-mid img{
+    position: absolute;
+    top:10%;
+    left:0;
+    width:250px;
+}
+
+.packaging-portfolio .brochure-portfolio-image-right img:first-child{
+    position: absolute;
+    width:400px;
+    right:0;
+}
+.packaging-portfolio .brochure-portfolio-image-right img:last-child{
+    position: absolute;
+    width:360px;
+    right:30%;
+    bottom:0;
+}
+
+
+.container-packaging-showcase .portfolio-image img{
+    width: 90%;
+    object-fit: cover;
+}
+
+.container-packaging-showcase{
+    height: 600px;
+    overflow: visible;
+}
+
+.software-used{
+    display: flex;
+}
+
+.software-used img{
+    width:35px;
+    height:35px;
+    margin-right:20px;
+}
+
+.brochure-portfolios img{
+    width:300px;
+    object-fit: cover;
+}
+
+.business-card-portfolio{
+    position: relative;
+    height:1200px;
+    overflow: hidden;
+}
+
+.business-card-portfolio img{
+    position: absolute;
+}
+.container-card{
+    position:relative;
+    height:1200px;
+    overflow: hidden;
+}
+
+.business-card-portfolio .business-card-parallex-1 img{
+    width:400px;
+    left:0;
+    top:5%;
+}
+.business-card-portfolio .business-card-parallex-2 img{
+    width:1200px;
+    left:0;
+    top:0%;
+}
+
+.business-card-portfolio .business-card-parallex-3 img{
+    width:1200px;
+    right:0;
+    top:10%;
+}
+
+.business-card-portfolio .business-card-parallex-4 img{
+    width:800px;
+    right:0;
+    bottom:0;
+}
+
+
+
+
+/* web design Portfolio */
+
+.webdesigns {
+    padding:20px 20px;
+}
+
+.webdesigns .portfolio-emt-intro h1::after{
+    display: none;
+}
+
+.webdesigns .portfolio-element{
+    display: inline-grid;
+}
+
+.webdesigns .element img{
+    width:750px;
+}
+
+.webdesigns .portfolio-emt-intro p{
+    color:#000;
+}
+
+.bg-blue{
+    background-color: #0033B4;
+    color:#fff!important;
+}
+
+
+.bg-blue h1,.bg-blue p{
+    color:#fff!important;
+}
+
+.website-preview-scroll-box{
+    height:500px; 
+    position: relative;
+}
+
+#laptop-cover{
+    z-index:1;
+    position: sticky;
+    top:0;
+    left:0;
+}
+
+.webdesigns .slide{
+    height:500px!important;
+    overflow-y:scroll;
+    position: absolute;
+    top:4%;
+    left:10%;
+}
+
+#web-preview{
+    z-index: -1;
+    width:600px;
+    height:380vh; 
+}
+
+.insta-post-inner{
+    padding:40px 0;
+    position: relative;
+}
+
+.insta-post-inner .col-3:nth-child(odd){
+    margin-top:50px
+}
+
+
+.insta-post-inner #ellipse{
+    position: absolute;
+    top:0;
+    right:-5%;
+    width:200px;
+    z-index:-1;
+}
+ .insta-post-mid{
+    position: relative;
+} 
+.insta-post-mid #ellipse-2{
+    position: absolute;
+    top:0;
+    left:5%;
+    width:200px;
+    z-index:-1;
+
+}
+
+.owl-buttons {
+    display: none;
+  }
+.owl-carousel:hover .owl-buttons {
+    display: block;
+}
+
+.owl-theme .owl-nav  {
+    background: transparent;
+    color: #000;
+    font-size: 40px;
+    width:100%;
+    line-height: 600px;
+    margin: 0;
+    padding: 0 60px;
+    position: absolute!important;
+    top: 0;
+  }
+  .owl-theme .owl-nav [class*='owl-']:hover{
+    background:transparent;
+    color: #000;
+  }
+  .owl-theme .owl-nav .owl-prev {
+    position: absolute!important;
+    left: 10%;
+    padding-left: 20px;
+  }
+  .owl-theme .owl-nav .owl-next {
+    position: absolute!important;
+    right: 10%;
+    padding-right: 20px;
+  }
+
+.padding-0{
+  padding:0;  
+}
+
+.MobileDisplay{
+    display: none;
+}    
+
+.scroll::-webkit-scrollbar{
+    width:10px;
+}
+/* Track */
+.scroll::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 20px;
+  }
+   
+  /* Handle */
+  .scroll::-webkit-scrollbar-thumb {
+    background: #0033B4; 
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  .scroll::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+
+  .title h3{
+    font-family: 'syne';
+    font-size:52px;
+    font-weight: 700;
+  }
+
+
+
+  /* marquee  */
+  .marquee {
+    position: relative;
+}
+
+.marquee__inner {
+    width: fit-content;
+    display: flex;
+    position: absolute;
+}
+.marquee__inner_2{
+    width: fit-content;
+    display: flex;
+    position: absolute;
+    z-index: 9;
+}
+
+.marquee span {
+    font-size:2vw;
+    padding: 0 2vw;
+    display: flex;
+}
+
+
+.portfolio-featuring-wrapper .title-text::after{
+    content:'';
+    background-color: #FFD600;
+    height:180px;
+    width:180px;
+    position:absolute;
+    border-radius:100%;
+    top:-50%;
+    left:30vw;
+    z-index:-1;
+
+}
+
+a svg{
+    transition: 1s!important;
+}
+
+a:hover svg{
+    scale:0.8;
+    transform: 1s;
+}
+
+
+/* Small Screen  */
+/* //Responsive// */
+@media  (min-width: 1200px) and (max-width: 1440px){
+    .scroll {
+        position: absolute;
+        top: 12%;
+        left: 22%;
+        height: 425px;
+        width: 770px;
+        overflow-y: scroll;
+    }
+}
+
+
+/* /Mobile Responsive/ */
+
+@media  (min-width: 320px) and (max-width: 480px){
+
+
+    .portfolio-emt-intro{
+        padding:25px ;
+    }
+    .portfolio-emt-intro #portfolio-1{
+        position: relative!important;
+        right:0;
+    }
+    .portfolio-emt-intro h1{
+        font-size:25px;
+    }
+    .portfolio-featuring-wrapper .title-text h2{
+        padding-top:40px;
+        font-size: 45px;
+    }
+
+    .portfolio-element-3{
+        display: none;
+    }
+    .DesktopDisplay{
+        display: none;
+    }
+    .MobileDisplay{
+        display: block;
+    }
+
+    .mobile-portfolio img{
+        height:400px;
+        object-fit: cover;
+    }
+
+    .MobileDisplay .element img{
+        height:18vh
+    }
+
+    .container-packaging-showcase .portfolio-image img{
+        width:100%;
+        min-height:350px;
+        max-height:400px;
+        height:400px;
+        object-fit: cover;
+    }
+
+
+
+    .mobile-portfolio{
+        height:400px;
+        overflow: hidden;
+    }
+    .container-packaging-showcase{
+        height:680px;
+    }
+
+    .container-packaging-showcase .portfolio-emt-intro{
+        padding:0;
+    }
+
+    .packaging-portfolio .brochure-portfolio-image-mid img{
+        position: relative;
+        width:100%;
+        top:0;
+    }
+    
+    .packaging-portfolio .brochure-portfolio-image-right img:first-child{
+        position: relative;
+    }
+
+    #desktop-container{
+        padding:10px;
+    }
+
+    .scroll {
+        position: absolute;
+        top: 8%;
+        left: 4%;
+        height:150px;
+        width: 260px;
+        overflow-y: scroll;
+        padding: 0
+    }
+
+    .scroll::-webkit-scrollbar{
+        display: none;
+    }
+
+    .portfolio-featuring-wrapper{
+        padding-top:100px; 
+    }
+
+    .owl-nav{
+        display: none;
+    }
+
+    .business-card-portfolio{
+        height:700px;
+    }
+    .business-card-portfolio img{
+        position: relative;
+        object-fit:cover;
+        width: 100%;
+        height: 100%;
+    
+    }
+
+    .business-card-portfolio .title{
+        padding:50px!important;
+    }
+
+
+    .scroll {
+        position: absolute;
+        top: 7%;
+        left: 4%;
+        height: 60%;
+        width: 82vw;
+        overflow-y: scroll;
+    }
+    .scroll img{
+        width:100%!important;
+    }
+
+    .scroller-container .owl-carousel .owl-item img{
+        width:90vw;
+    }
+
+
+    
+    .portfolio-featuring-wrapper .title-text::after{
+        content:'';
+        background-color: #FFD600;
+        height:100px;
+        width:100px;
+        position:absolute;
+        border-radius:100%;
+        top:0%;
+        left:35vw;
+        z-index:-1;
+
+    }
+}

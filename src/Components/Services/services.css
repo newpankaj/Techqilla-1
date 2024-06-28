@@ -1,0 +1,230 @@
+.services{
+    padding:80px 50px;
+    background-color: #00102F;
+    color:#fff;
+    position: relative;
+}
+
+.services .service-title{
+    padding-bottom:80px;
+}   
+
+.services .service-title h1{
+    font-family: 'Syne', sans-serif!important;
+    font-size:62px;
+    font-weight: bold;
+    padding-left: 130px;
+}
+
+.services .service-title span{
+    font-family: 'Syne', sans-serif!important;
+    font-size:220px;
+    font-weight:bold;
+    opacity:0.05;
+    position: absolute;
+    top:110px;
+}
+
+.service-content{
+    display: block;
+}
+
+.services .service-content{
+    display: flex;
+    margin:auto;
+}
+
+.services .service-content svg{
+    margin:20px 0;
+}
+
+.services .service-content p{
+    padding:0 40px;
+}
+
+.services .services-list{
+    padding:20px 0;
+}
+
+.services .services-list h3{
+    font-family: 'Gilroy-Medium', sans-serif!important;
+    border-bottom:1px solid #fff;
+    font-size:22px;
+    padding:10px 0
+}
+
+.services .services-list h2{
+    padding:20px 0;
+    font-family: 'Gilroy-Medium', sans-serif!important;
+    font-size:26px;
+    text-transform: uppercase;
+    height:100px;
+}
+
+.services .services-list button{
+    background:transparent;
+    color:#fff;
+    border:none;
+    font-size:24px;
+    padding:0;  
+}
+
+.services .services-list button a {
+    color:#fff;
+    text-decoration: none;
+}
+
+
+.services .services-list button svg{
+    background:#1E44D3;
+    border:none;
+    border-radius:50%;
+    height:35px;
+    width:35px;
+    padding:5px 10px;
+    margin-left:50px;
+    transition:0.5s;
+}
+
+
+.services .services-list button:hover svg{
+    transform: scale(1.3) rotate(45deg);
+}
+
+
+.services .parallax-img{
+    position: relative;
+    left:150px;
+}
+.img-container{
+    width:380px;
+    height:450px;
+    overflow:hidden;
+}
+.imgside{
+    width:380px;
+    height:450px;
+    transition: 0.5s ease;
+    transform: scale(1)
+}
+.imgside:hover {
+    transform: scale(1.1);
+}
+
+.owl-theme{
+    cursor:grab;
+}
+
+
+
+@media (min-width: 1020px) and (max-width: 1200px){
+    .about-section .about-wrapper img{
+        width:600px!important;
+        height:450px!important;
+    }
+    .about-section .content-img-wrapper img{
+        width: 300px!important;
+        height: 244px!important;
+    }
+    .whyus .features h2{
+        padding-right:0!important
+    }.whyus .features{
+        padding:0 40px!important;
+    }
+}
+
+/* /responsive/ */
+
+@media only screen and (max-width: 480px){
+
+    .services{
+        padding:50px 20px; 
+    }
+    
+    .services .service-title{
+        padding-bottom:80px;
+    }   
+    
+    .services .service-title h1{
+        font-size:40px;
+        padding-left:0px;
+    }
+    
+    .services .service-title span{
+        font-size:100px;
+    }
+    
+    .services .service-content{
+        display: flex;
+        margin:auto;
+    }
+    
+    .services .service-content svg{
+        margin:10px 0;
+    }
+    
+    .services .service-content p{
+        padding:0 10px;
+        font-size:15px;
+    }
+    
+    .services .services-list{
+        padding:20px 0;
+    }
+    
+    .services .services-list h3{
+        font-family: 'Gilroy-Medium', sans-serif!important;
+        border-bottom:1px solid #fff;
+        font-size:22px;
+        padding:10px 0
+    }
+    
+    .services .services-list h2{
+        padding:20px 0;
+        font-family: 'Gilroy-Medium', sans-serif!important;
+        font-size:26px;
+        text-transform: uppercase;
+    }
+    
+    .services .services-list button{
+        background:transparent;
+        color:#fff;
+        border:none;
+        font-size:24px;
+        padding:0;  
+    }
+    
+    .services .services-list button a {
+        color:#fff;
+        text-decoration: none;
+    }
+    
+    
+    .services .services-list button svg{
+        background:#1E44D3;
+        border:none;
+        border-radius:50%;
+        height:35px;
+        width:35px;
+        padding:5px 10px;
+        margin-left:50px;
+        transition:0.5s;
+    }
+    .services .services-list button:hover svg{
+        transform: rotate(45deg);
+    }
+    
+    
+    .services .parallax-img{
+        position: relative;
+        left:150px;
+    }
+    
+    .imgside{
+        width:320px;
+        height:400px;
+    }
+    .Service-banner .img-banner {
+        height: 300px!important;
+    }
+}

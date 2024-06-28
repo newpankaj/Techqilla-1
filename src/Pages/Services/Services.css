@@ -1,0 +1,198 @@
+.Service-banner{
+    padding:100px 60px;
+    position: relative;
+}
+
+.Service-banner-inner{
+    height:600px;
+}
+
+.Service-banner .head{
+    width:100%;
+    z-index:0;
+    position: relative;
+    z-index: 2;
+}
+
+.Service-banner .head h2{
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.Service-banner .head h2 span{
+    color:#1E44D3;
+}
+
+.Service-banner .img-banner{
+    position:absolute;
+    left:35%;
+    top:35%;
+    width:750px;
+    height:500px;
+    overflow:hidden;
+} 
+
+.Service-banner .ellipse {
+    position: absolute;
+    left:0;
+    bottom:5%;
+}
+
+.accordion-section{
+    padding:100px 40px;
+    background-color: #0033B4;
+}
+.accordion-section .accordion{
+    width:100%;
+    border-bottom:1px solid #fff;
+    overflow: hidden;
+}
+.accordion-section .acc-btn{
+    font-family: 'syne';
+    font-size:42px;
+    font-weight: 700;
+    background: transparent;
+    border:none;
+    padding:20px 10px; 
+    color:#fff;
+    width:100%;
+    text-align: left;
+    position: relative;
+}
+.accordion-section .active{
+    color:#FFD600!important;
+ }
+.accordion-section .acc-btn i{
+    font-size:50px;
+    position: absolute;
+    right:25px;
+    top:35%;
+    cursor: default;
+}
+.acc-btn:hover{
+    scale:1!important;
+}
+
+.panel{
+    display: none;
+    width:100%;
+    padding:10px 20px;
+}
+
+.panel-list{
+    display: flex;
+}
+
+.panel ul {
+    list-style: none;
+    width:50%;
+    padding: 0;
+}
+
+.panel ul li{
+    font-family:'syne';
+    font-size:24px;
+    font-weight:400;
+    color:#fff;
+    cursor:pointer;
+    padding:10px 0;
+}
+
+.panel ul li:hover {
+    color:#FFD600
+}
+.industries{
+    padding:100px 40px;
+}
+.industry-items{
+    padding:50px;
+}
+
+.industry-items img{
+    width:40px;
+    height: 35px;
+    margin-bottom:10px;
+}
+
+.industry-items h3{
+    font-size:24px;
+}
+
+.open{
+    display: block!important;
+}
+
+/* /Mobile Responsive/ */
+
+@media only screen and (max-width: 480px){
+
+    .Service-banner{
+        padding:100px 30px;
+    }
+
+    .Service-banner-inner{
+        height:300px;
+    }
+
+    
+    .Service-banner .head{
+        width:320px;
+        z-index:0;
+        position: relative;
+        z-index: 2;
+        padding-bottom:20px;
+    }
+
+    .Service-banner .head h2{
+        font-size:35px;
+    }
+
+    .Service-banner .img-banner{
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 85vw;
+    }
+
+    .Service-banner .ellipse {
+        display: none;
+    }
+
+    .accordion-section{
+        padding:60px 30px;
+    }
+
+    .accordion-section .acc-btn{
+        font-size: 22px;
+        padding:20px 0;
+    }
+
+    .accordion-section .acc-btn i{
+        font-size:30px;
+        top:25%;
+    }
+    .panel{
+        padding:10px;
+    }
+
+    .industries{
+        padding:60px 20px;
+    }
+
+    .industry-items{
+        padding:10px;
+    }
+
+    .industry-items h3{
+        font-size:16px;
+    }
+
+    .panel-list{
+        display: block;
+    }
+
+    .panel ul{
+        width:100%;
+        margin:0;
+    }
+}

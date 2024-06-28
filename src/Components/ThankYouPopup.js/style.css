@@ -1,0 +1,45 @@
+#thanks-popup{
+    display: none;
+    width:100vw;
+    height:100vh;
+    background-color: #fff;
+
+}
+
+
+.thank-you-Popup{
+    position: fixed;
+    top:10%;
+    bottom:10%;
+    width:60vw;
+    z-index:99999;
+    background: linear-gradient( #BFD4FF 30%, #fff 80%);
+    box-shadow: 0 0 100px #00000034;
+    padding:50px;
+    text-align: center;
+}
+
+.thank-you-Popup h1{
+    font-family:'syne';
+    font-weight:700;
+    font-size: 88px;
+}
+
+.thank-you-Popup #center-img{
+    width:281px;
+    height:292px;   
+}
+
+.thank-you-Popup #display-img-left{
+    width:70px;
+    height:140px;
+    position: absolute;
+    left:0;
+}
+.thank-you-Popup #display-img-right{
+    width:35px;
+    height:70px;
+    position: absolute;
+    top:25%;
+    right:0;
+}
